@@ -1,0 +1,51 @@
+@import "../../../_helpers/style";
+.comment{
+  padding: 35px 15px 40px 15px;
+  margin-bottom: 15px;
+  width: 410px;
+  font-family: "Calibri";
+  color: #494848;
+  @media (min-width: 320px) and (max-width: 1119px) {
+    width: 100%;
+    padding: 15px;
+  }
+  &__main{
+    margin: 20px 0;
+    @media (min-width: 320px) and (max-width: 1119px) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+  &__label{
+    font-size: 36px;
+    font-style: italic;
+  }
+  &__text{height: auto;
+    font-size: 18px;
+    line-height: 14px;
+    padding-bottom: 30px;
+    @media (min-width: 320px) and (max-width: 1439px) {
+      line-height: 1;
+
+      &_br {
+        display: none;
+      }
+    }
+  }
+  &__buttons {
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
+    display: flex;
+    @media (min-width: 320px) and (max-width: 1119px) {
+      bottom: 30px;
+    }
+    &_nav {
+      width: 45px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+  }
+}

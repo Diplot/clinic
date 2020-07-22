@@ -1,0 +1,95 @@
+@import "../../../_helpers/style";
+.articals {
+  border-right: 1px solid #e3e6ea;
+  padding: 35px 15px 40px 15px;
+  margin-bottom: 15px;
+  width: 810px;
+  font-family: "Calibri";
+  color: #494848;
+  @media (min-width: 320px) and (max-width: 1119px) {
+    width: 100%;
+    padding: 15px;
+  }
+
+  &__label {
+    font-size: 36px;
+    font-style: italic;
+  }
+
+  &__main {
+    @media (min-width: 320px) and (max-width: 1119px) {
+      width: 100%;
+    }
+
+  }
+
+  &__figure {
+    display: flex;
+    justify-content: space-between;
+    height: 234px;
+    margin: 20px 0;
+    @media (min-width: 320px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+    }
+  }
+
+  &__img {
+
+    @media (min-width: 320px) and (max-width: 350px) {
+      width: 100%;
+    }
+    @media (min-width: 320px) and (max-width: 1199px) {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__caption {
+    height: 100%;
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      padding-left: 15px;
+
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 14px;
+    padding-bottom: 15px;
+    @media (min-width: 320px) and (max-width: 1439px) {
+      &_br {
+        display: none;
+      }
+    }
+  }
+  &__buttons {
+
+    display: flex;
+    justify-content: space-between;
+
+    &_nav {
+      height: 36px;
+      width: 45px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+
+    }
+
+    &_read_more {
+      right: 0px;
+      justify-self: flex-end;
+      height: 36px;
+      background-color: #37c3a8;
+      color: #fff;
+      border-radius: 6px;
+      border: none;
+
+    }
+
+  }
+
+}
+
